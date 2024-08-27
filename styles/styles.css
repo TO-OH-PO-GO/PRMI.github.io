@@ -28,8 +28,6 @@ header {
     display: flex;
     justify-content: center;
     
-    max-width: 400px; /* 최대 너비 제한 */
-    width: 100%; /* 가득 채우기 */
     
 }
 
