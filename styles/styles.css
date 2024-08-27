@@ -1,4 +1,4 @@
-/* 기본 스타일 */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -27,6 +27,10 @@ header {
     margin: 0;
     display: flex;
     justify-content: center;
+    
+    max-width: 400px; /* 최대 너비 제한 */
+    width: 100%; /* 가득 채우기 */
+    
 }
 
 .nav-list li {
@@ -44,7 +48,7 @@ header {
     border-radius: 4px;
 }
 
-/* 햄버거 메뉴 스타일 (모바일) */
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -88,26 +92,86 @@ header {
     }
 }
 
-/* 섹션 스타일 */
+
 section {
     padding: 80px 20px;
     margin: 20px 0;
     min-height: 100vh;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(2, 26, 15, 0.8);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section#home {
     text-align: center;
-    padding: 100px 20px; /* 패딩을 조금 더 늘려서 제목을 강조 */
+    padding: 100px 20px; 
 }
 
 section#home h1 {
-    font-size: 4em; /* 폰트 크기를 더 크게 조정 */
-    font-weight: bold; /* 폰트 두께를 더 두껍게 */
+    font-size: 4em; 
+    font-weight: bold; 
     margin: 0;
-    color: #333; /* 색상을 필요에 맞게 조정 */
+    color: #ebebeb; 
+}
+section#professor {
+    text-align: center;
+    padding: 100px 20px;
+    color: #ebebeb;  
+}
+
+section#professor h1 {
+    font-size: 4em; 
+    font-weight: bold; 
+    margin: 0;
+    color: #ebebeb; 
+}
+section#member {
+    text-align: center;
+    padding: 100px 20px; 
+    color: #ebebeb;
+}
+
+section#member h1 {
+    font-size: 4em; 
+    font-weight: bold; 
+    margin: 0;
+    color: #ebebeb; 
+}
+section#research {
+    text-align: center;
+    padding: 100px 20px; 
+    color: #ebebeb;
+}
+
+section#research h1 {
+    font-size: 4em; 
+    font-weight: bold; 
+    margin: 0;
+    color: #ebebeb; 
+}
+section#publications {
+    text-align: center;
+    padding: 100px 20px;
+    color: #ebebeb; 
+}
+
+section#publications h1 {
+    font-size: 4em; 
+    font-weight: bold; 
+    margin: 0;
+    color: #ebebeb; 
+}
+section#contact {
+    text-align: center;
+    padding: 100px 20px;
+    color: #ebebeb; 
+}
+
+section#contact h1 {
+    font-size: 4em; 
+    font-weight: bold; 
+    margin: 0;
+    color: #ebebeb; 
 }
 
 footer {
