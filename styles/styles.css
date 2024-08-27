@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section#home {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+section#about, section#research, section#publications, section#contact {
+    background: #e2e2e2;
+    border-radius: 8px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
