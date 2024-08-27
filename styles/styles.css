@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-image: url('image1.png');
+    background-image: url('image1.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -100,6 +100,14 @@ section {
 
 section#home {
     text-align: center;
+    padding: 100px 20px; /* 패딩을 조금 더 늘려서 제목을 강조 */
+}
+
+section#home h1 {
+    font-size: 4em; /* 폰트 크기를 더 크게 조정 */
+    font-weight: bold; /* 폰트 두께를 더 두껍게 */
+    margin: 0;
+    color: #333; /* 색상을 필요에 맞게 조정 */
 }
 
 footer {
