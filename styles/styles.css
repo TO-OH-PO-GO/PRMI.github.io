@@ -3,48 +3,61 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-image: url('image.jpg'); /* 배경 이미지 설정 */
+    background-size: cover;
+    background-attachment: fixed; /* 배경을 고정시킴 */
+    background-position: center;
+    color: #333;
 }
 
 header {
-    background: #333;
+    background: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
+header nav ul li {
     display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    background: #555;
+    border-radius: 4px;
 }
 
 section {
-    padding: 20px;
+    padding: 80px 20px; /* 패딩을 늘려 상단 헤더와 겹치지 않도록 설정 */
     margin: 20px 0;
+    min-height: 100vh; /* 각 섹션의 높이를 전체 화면 높이로 설정 */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section#home {
-    background: #f4f4f4;
     text-align: center;
-    padding: 60px 20px;
-}
-
-section#about, section#research, section#publications, section#contact {
-    background: #e2e2e2;
-    border-radius: 8px;
 }
 
 footer {
-    background: #333;
+    background: rgba(0, 0, 0, 0.7);
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -52,7 +65,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    nav ul li {
+    header nav ul li {
         display: block;
         margin: 10px 0;
     }
